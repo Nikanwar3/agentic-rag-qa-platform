@@ -1,0 +1,34 @@
+[
+  {
+    "question": "How many days a week can employees work remotely?",
+    "expected_keywords": ["five", "5"]
+  },
+  {
+    "question": "After how many days of employment are employees eligible for health insurance?",
+    "expected_keywords": ["90"]
+  },
+  {
+    "question": "What is the annual learning stipend amount?",
+    "expected_keywords": ["15,000", "15000"]
+  },
+  {
+    "question": "How much paid time off do employees accrue per month?",
+    "expected_keywords": ["1.5"]
+  },
+  {
+    "question": "What is the home office equipment allowance for new employees?",
+    "expected_keywords": ["20,000", "20000"]
+  },
+  {
+    "question": "How many weeks of paid parental leave do primary caregivers get?",
+    "expected_keywords": ["26"]
+  },
+  {
+    "question": "How often are performance reviews conducted?",
+    "expected_keywords": ["twice", "april", "october"]
+  },
+  {
+    "question": "How many consecutive sick days trigger a requirement for manager sign-off?",
+    "expected_keywords": ["3", "three"]
+  }
+]

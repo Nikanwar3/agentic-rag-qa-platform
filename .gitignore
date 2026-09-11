@@ -1,0 +1,29 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+
+# SQL databases (SQLite)
+data/*.db
+data/*.db-journal
+
+# FAISS indexes (rebuilt by ingestion — not committed)
+data/indexes/
+
+# MLflow local artifacts
+mlruns/
+mlartifacts/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
