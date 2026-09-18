@@ -1,6 +1,5 @@
 """Document loading (PDF / DOCX / plain text, local or remote) and chunking."""
 
-import os
 import re
 import tempfile
 from urllib.parse import urlparse

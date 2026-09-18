@@ -14,8 +14,23 @@ via the ORM's func.* helpers rather than hand-rolled Python aggregation.
 import uuid
 from datetime import datetime, timezone
 
-from sqlalchemy import create_engine, func, String, Integer, Float, Boolean, DateTime, ForeignKey
-from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, sessionmaker, relationship
+from sqlalchemy import (
+    Boolean,
+    DateTime,
+    Float,
+    ForeignKey,
+    Integer,
+    String,
+    create_engine,
+    func,
+)
+from sqlalchemy.orm import (
+    DeclarativeBase,
+    Mapped,
+    mapped_column,
+    relationship,
+    sessionmaker,
+)
 
 from app.config import settings
 

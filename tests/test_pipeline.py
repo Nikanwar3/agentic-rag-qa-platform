@@ -1,9 +1,9 @@
 import asyncio
 
-from app.document_processor import chunk_text
-from app.vector_store import build_and_persist_index, query_top_chunks
 from app import llm_client
 from app.agent import answer_question
+from app.document_processor import chunk_text
+from app.vector_store import build_and_persist_index, query_top_chunks
 
 SAMPLE_TEXT = (
     "Employees may work remotely up to five days a week with manager approval. "

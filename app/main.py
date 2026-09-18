@@ -4,6 +4,7 @@ it, and inspect SQL-backed history/analytics. Every /query call is also
 logged as an MLflow run (see app/mlflow_tracker.py).
 """
 
+import os
 import time
 
 from fastapi import FastAPI, HTTPException
@@ -11,12 +12,20 @@ from fastapi import FastAPI, HTTPException
 from app import mlflow_tracker
 from app.agent import answer_question
 from app.config import settings
-from app.database import get_analytics, get_recent_queries, init_db, log_document, log_query
-from app.document_processor import chunk_text, download_to_tempfile, extract_text_from_document
+from app.database import (
+    get_analytics,
+    get_recent_queries,
+    init_db,
+    log_document,
+    log_query,
+)
+from app.document_processor import (
+    chunk_text,
+    download_to_tempfile,
+    extract_text_from_document,
+)
 from app.schemas import IngestRequest, IngestResponse, QueryRequest, QueryResponse
 from app.vector_store import build_and_persist_index
-
-import os
 
 app = FastAPI(title="Agentic RAG QA Platform")
 init_db()

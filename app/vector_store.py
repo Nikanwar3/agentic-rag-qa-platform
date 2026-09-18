@@ -6,7 +6,6 @@ vector DB / API key required to run this project).
 
 import json
 import os
-from typing import List
 
 import faiss
 import numpy as np
@@ -39,7 +38,7 @@ def _normalize(vectors: np.ndarray) -> np.ndarray:
     return vectors / norms
 
 
-def build_and_persist_index(document_id: str, chunks: List[str]) -> None:
+def build_and_persist_index(document_id: str, chunks: list[str]) -> None:
     model = _get_model()
     embeddings = _normalize(np.asarray(model.encode(chunks), dtype="float32"))
 
